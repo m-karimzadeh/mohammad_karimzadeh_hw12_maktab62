@@ -1,0 +1,22 @@
+html, body{ width:100%; height:100%; padding: 0; margin: 0; background: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12); }
+
+*{ box-sizing: border-box; }
+
+.errMsg{ line-height: 30px; padding: 5px 5px; margin-top: 10px; color: #ff0000; background: rgba(255, 255, 255, .7); font-size: 19px; font-weight: bold; border-radius: 5px; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
+.resultMsg{ line-height: 30px; padding: 5px 5px; margin-top: 10px; color: #02b03e; background: rgba(255, 255, 255, .7); font-size: 19px; font-weight: bold; border-radius: 5px; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
+
+#formBox{ width: 350px; height: 100%; margin: auto; display: grid; align-items: center; }
+#formBox>section{ width: 100%; }
+
+#formTitle{ line-height: 30px; font-size: 27px; color: rgba(255, 255, 255, .5); font-weight: bold; text-align: center; }
+
+#formBox form{ width: 100%; margin-top: 20px; display: grid; grid-gap: 10px 0; }
+#formBox form input{ width: 100%; height: 40px; padding: 0 5px; font-size: 15px; color: #ffffff; background: none; border: none; border-radius: 5px; box-shadow: 1px 1px 3px rgba(255, 255, 255, .5); display: block; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
+#formBox form select{ width: 100%; height: 40px; padding: 0 5px; font-size: 15px; color: #ffffff; background: none; border: none; border-radius: 5px; box-shadow: 1px 1px 3px rgba(255, 255, 255, .5); display: block; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
+#formBox form select option{ color: #3a3a3a; }
+#formBox form button{ width: 100%; height: 40px; font-size: 15px; font-weight: bold; color: rgba(255, 255, 255, .5); background: none; border: none; border-radius: 5px; box-shadow: 1px 1px 3px rgba(255, 255, 255, .5); display: block; cursor: pointer; transition: all .3s linear; -webkit-transition: all .3s linear; -moz-transition: all .3s linear; -ms-transition: all .3s linear; -o-transition: all .3s linear; }
+#formBox form button:hover{ background: rgba(0, 0, 0, .5); color: #ffffff; }
+
+#formOtherLink{ margin-top: 20px; display: grid; grid-gap: 5px 0; justify-content: center; }
+#formOtherLink a{ font-size: 14px; color: rgba(255, 255, 255, .5); display: inline-block; text-align: center; text-decoration: none; transition: all .3s linear; -webkit-transition: all .3s linear; -moz-transition: all .3s linear; -ms-transition: all .3s linear; -o-transition: all .3s linear; }
+#formOtherLink a:hover{ color: #ffffff; }

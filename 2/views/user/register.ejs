@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+
+    <link type="text/css" rel="stylesheet" href="/file/style.css">
+</head>
+<body>
+    <section id="formBox">
+        <section>
+            <section id="formTitle">Register Form</section>
+            <% if(locals.errMsg){ %>
+                <section class="errMsg"><%= locals.errMsg %></section>
+            <% } %>
+            <form action="/user/register" method="POST">
+                <input name="username" type="text" placeholder="username" maxlength="50" autocomplete="off" required>
+                <input name="password" type="password" placeholder="password" maxlength="50" autocomplete="off" required>
+                <input name="email" type="email" placeholder="email" maxlength="50" autocomplete="off" required>
+                <select name="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+            <section id="formOtherLink">
+                <a href="/user/forget">Forget Password</a>
+                <a href="/user/login">login</a>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

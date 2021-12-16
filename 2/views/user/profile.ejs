@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+    <link type="text/css" rel="stylesheet" href="/file/style.css">
+</head>
+<body>
+    <section id="formBox">
+        <section>
+            <section id="formTitle">profile Form</section>
+            <% if(locals.errMsg){ %>
+                <section class="errMsg"><%= locals.errMsg %></section>
+            <% } %>
+            <form action="" method="POST">
+                <input name="username" type="text" placeholder="username" value="<%= locals.userInfo.username %>" maxlength="50" required>
+                <input name="oldUsername" type="hidden" value="<%= locals.userInfo.username %>" readonly>
+                <input name="password" type="password" placeholder="password" value="<%= locals.userInfo.password %>" maxlength="50" autocomplete="off" required>
+                <input name="email" type="email" placeholder="email" value="<%= locals.userInfo.email %>" maxlength="50" autocomplete="off" required>
+                <select name="gender">
+                    <option id="maleGender" value="male">male</option>
+                    <option id="femaleGender" value="female">female</option>
+                </select>
+                <script>
+                    document.getElementById("<%= locals.userInfo.gender %>Gender").selected = true; 
+                </script>
+                <button type="submit">Update</button>
+                <section id="formOtherLink">
+                    <a href="/user/logout/<%= locals.userInfo.username %>">logout</a>
+                </section>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

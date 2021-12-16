@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+    <link type="text/css" rel="stylesheet" href="/file/style.css">
+</head>
+<body>
+    <section id="formBox">
+        <section>
+            <section id="formTitle">Forget Password</section>
+            <% if(locals.errMsg){ %>
+                <section class="errMsg"><%= locals.errMsg %></section>
+            <% } %>
+            <form action="" method="POST">
+                <input name="username" type="text" placeholder="username" maxlength="50" required>
+                <input name="email" type="email" placeholder="email" maxlength="50" autocomplete="off" required>
+                <button type="submit">Reset Password</button>
+                <section id="formOtherLink">
+                    <a href="/user/login">login</a>
+                </section>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link type="text/css" rel="stylesheet" href="/file/style.css">
+</head>
+<body>
+    <section id="formBox">
+        <section>
+            <section id="formTitle">Login Form</section>
+            <% if(locals.errMsg){ %>
+                <section class="errMsg"><%= locals.errMsg %></section>
+            <% } %>
+            <% if(locals.resultMsg){ %>
+                <section class="resultMsg"><%= locals.resultMsg %></section>
+            <% } %>
+            <form action="/user/login" method="POST">
+                <input name="username" type="text" placeholder="username" maxlength="50" autocomplete="off" required>
+                <input name="password" type="password" placeholder="password" maxlength="50" autocomplete="off" required>
+                <button type="submit">Login</button>
+            </form>
+            <section id="formOtherLink">
+                <a href="/user/forget">Forget Password</a>
+                <a href="/user/register">Register</a>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
