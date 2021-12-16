@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "orange sneakers model 871",
+        "color": "orange",
+        "size": 39,
+        "price": 37500,
+        "image": "images/11.jpg",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quae consectetur quasi dolore praesentium ratione aliquid voluptates amet repudiandae necessitatibus ipsam nam iure aperiam unde recusandae, velit quos possimus!"
+    },
+    {
+        "id": 2,
+        "name": "black sneakers model 872",
+        "color": "black",
+        "size": 38,
+        "price": 37500,
+        "image": "images/22.jpg",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quae consectetur quasi dolore praesentium ratione aliquid voluptates amet repudiandae necessitatibus ipsam nam iure aperiam unde recusandae, velit quos possimus!"
+    },
+    {
+        "id": 3,
+        "name": "pink sneakers model 873",
+        "color": "pink",
+        "size": 37,
+        "price": 37500,
+        "image": "images/33.jpg",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quae consectetur quasi dolore praesentium ratione aliquid voluptates amet repudiandae necessitatibus ipsam nam iure aperiam unde recusandae, velit quos possimus!"
+    },
+    {
+        "id": 4,
+        "name": "green sneakers model 874",
+        "color": "green",
+        "size": 36,
+        "price": 37500,
+        "image": "images/44.jpg",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quae consectetur quasi dolore praesentium ratione aliquid voluptates amet repudiandae necessitatibus ipsam nam iure aperiam unde recusandae, velit quos possimus!"
+    },
+    {
+        "id": 5,
+        "name": "blue sneakers model 875",
+        "color": "blue",
+        "size": 35,
+        "price": 37500,
+        "image": "images/55.jpg",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quae consectetur quasi dolore praesentium ratione aliquid voluptates amet repudiandae necessitatibus ipsam nam iure aperiam unde recusandae, velit quos possimus!"
+    },
+    {
+        "id": 6,
+        "name": "red sneakers model 876",
+        "color": "red",
+        "size": 39,
+        "price": 37500,
+        "image": "images/66.jpg",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quae consectetur quasi dolore praesentium ratione aliquid voluptates amet repudiandae necessitatibus ipsam nam iure aperiam unde recusandae, velit quos possimus!"
+    }
+]

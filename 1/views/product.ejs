@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <link rel="stylesheet" href="/file/style.css">
+</head>
+<body>
+    <%- include ('./header') %> 
+
+    <section class="textBox">
+        <img src="/file/<%= product.image %>">
+
+        <h2 class="productListName"><%= product.name %></h2>
+        <section>color: <%= product.color %></section>
+        <section>size: <%= product.size %></section>
+
+        <section><%- product.body %></section>
+    </section>
+
+    <%- include ("./footer") %>
+</body>
+</html>
